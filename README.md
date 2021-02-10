@@ -34,16 +34,19 @@ In order to run this program, you must have:
 2. Navigate to the [Spotify Developers Dashboard](https://developer.spotify.com/dashboard/applications)
     - click `Create an App`
     - Provide a name and description, and check the boxes
+    - Go to Edit Settings, and add `https://www.spotify.com/us/` under redirect URI
     - click `Show Client Secret`
 
 3. Set your environment variables. On the Spotify app page, you will see a Client ID hash and a Client Secret hash.
     - On Windows Powershell:  
         `$env:SPOTIPY_CLIENT_ID='your_client_id_hash'`  
         `$env:SPOTIPY_CLIENT_SECRET='your_client_secret_hash'`  
+        `$env:SPOTIPY_REDIRECT_URI='https://www.spotify.com/us/'`  
 
     - On Mac:  
         `export SPOTIPY_CLIENT_ID='your_client_id_hash'`  
         `export SPOTIPY_CLIENT_SECRET='your_client_secret_hash'`  
+        `export SPOTIPY_REDIRECT_URI='https://www.spotify.com/us/'`  
 
 4. Run main.py
     - `python main.py`
