@@ -8,9 +8,11 @@ This is a tool that can be used to convert your Google Play Music library into 1
 
 ## What is a Google Play Music library, and how can I download mine?
 
-The Google Play Music (GPM) library was an awesome feature that let you add songs individually to your personal collection, without needing to be saved to playlists. 
+The Google Play Music (GPM) library was an awesome feature that let you add songs individually to your personal collection,  
+without needing to be saved to playlists. 
 
-[You can download your GPM library through Google Takout by using this link](https://takeout.google.com/settings/takeout/custom/play_music?gar=1). (This link should also be in your email from Google.)
+[You can download your GPM library through Google Takout by using this link](https://takeout.google.com/settings/takeout/custom/play_music?gar=1). 
+(This link should also be in your email from Google.)
 
 **Important: You can only download your GPM library until February 24, 2021.
 After that, your GPM Library will be deleted, and you will be unable to download it.**
@@ -24,8 +26,8 @@ In order to run this program, you must have:
 ## Instructions
 
 1. Clone this repository and cd into the directory
-    `git clone https://github.com/awaseem2/gpm-library-converter.git`
-    `cd gpm-library-converter`
+    - `git clone https://github.com/awaseem2/gpm-library-converter.git`
+    - `cd gpm-library-converter`
 
 1. Download and unzip [your GPM library](https://takeout.google.com/settings/takeout/custom/play_music?gar=1)
 
@@ -34,26 +36,25 @@ In order to run this program, you must have:
     - Provide a name and description, and check the boxes
     - click `Show Client Secret`
 
-3. Set your environment variables
-    On the Spotify app page, you will see a Client ID hash and a Client Secret hash.
-    - On Windows Powershell:
-        `$env:SPOTIPY_CLIENT_ID='your_client_id_hash'`
-        `$env:SPOTIPY_CLIENT_SECRET='your_client_secret_hash'`
+3. Set your environment variables. On the Spotify app page, you will see a Client ID hash and a Client Secret hash.
+    - On Windows Powershell:  
+        `$env:SPOTIPY_CLIENT_ID='your_client_id_hash'`  
+        `$env:SPOTIPY_CLIENT_SECRET='your_client_secret_hash'`  
 
-    - On Mac:
-        `export SPOTIPY_CLIENT_ID='your_client_id_hash'`
-        `export SPOTIPY_CLIENT_SECRET='your_client_secret_hash'`
+    - On Mac:  
+        `export SPOTIPY_CLIENT_ID='your_client_id_hash'`  
+        `export SPOTIPY_CLIENT_SECRET='your_client_secret_hash'`  
 
 4. Run main.py
-    `python main.py`
+    - `python main.py`
 
 5. Enter 1 to consolidate your GPM Library files into 1 CSV
 
 6. Enter the path to the directory the files are in
-    - For me, this looked something like 
+    - For me, this looked something like  
     `C:\Users\username\Downloads\takeout-20210209T095055Z-001\Takeout\Google Play Music\Tracks`
 
-7. Once this is complete, I recommend noting any songs that failed to work.
+7. Once this is complete, I recommend noting any songs that failed to work.  
 Next, enter 2
 
 8. Type "default"
