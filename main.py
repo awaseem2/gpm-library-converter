@@ -41,7 +41,7 @@ def AuthenticateSpotify():
 
 	prompt_token = True
 	while prompt_token:
-		username = input("enter your username: \n")
+		username = input("enter your spotify username: \n")
 		username = 'aly5321' #TODO: delete
 		token = util.prompt_for_user_token(username, scope)
 		if token:
@@ -66,7 +66,7 @@ def CreateSpotifyPlaylist(path):
 		csv_reader = csv.DictReader(csv_file)
 		line_count = 0
 		tracks = []
-		print('searching for songs...')
+		print('searching for songs... (This may take a while)')
 		for row in csv_reader:
 			if line_count == 0:
 				line_count += 1
