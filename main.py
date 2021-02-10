@@ -42,7 +42,6 @@ def AuthenticateSpotify():
 	prompt_token = True
 	while prompt_token:
 		username = input("enter your spotify username: \n")
-		username = 'aly5321' #TODO: delete
 		token = util.prompt_for_user_token(username, scope)
 		if token:
 			prompt_token = False
