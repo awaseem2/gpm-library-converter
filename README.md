@@ -62,6 +62,9 @@ Next, enter 2
 
 8. Type "default"
 
+9. Enter your username. This will open a link in your browser to log in.  
+Once logged in, **copy the redirect link**, and paste that into the program.
+
 9. Wait until it finishes. Note any songs that failed. ctrl-c or type "Quit" to exit the program.
 
 ## Disclaimer
